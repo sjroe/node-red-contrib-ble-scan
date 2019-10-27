@@ -1,0 +1,33 @@
+{
+  "name": "node-red-contrib-ble-scan",
+  "version": "1.0.0",
+  "description": "Using noble.js, continuously scans for BLE advertisements",
+  "author": {
+    "name": "Stephen Roe",
+    "email": "ste.roe@gmail.com"
+  },
+  "keywords": [
+    "ble",
+    "bluetooth",
+    "mijia",
+    "nodered",
+    "node-red",
+    "sensor",
+    "temperature",
+    "humidity",
+    "xiomi"
+  ],
+  "license": "MIT",
+  "node-red": {
+    "nodes": {
+      "ble-scan": "ble-scan.js"
+    }
+  },
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjroe/node-red-contrib-ble-scan.git"
+  }
+}

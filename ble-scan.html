@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('BLE Scan', {
+        category: 'BLE',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: "" }
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "arrow-in.png",
+        label: function () {
+            return this.name || "BLE Scan";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="BLE Scan">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="BLE Scan">
+    <p>Using noble.js continuously scans for BLE broadcasts and presents </p>
+</script>
